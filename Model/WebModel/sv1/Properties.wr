@@ -1,6 +1,6 @@
 <SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1" name="Inicio" homePage="sv1#page3" landmarks="sv1#page6 sv1#page4 sv1#seu2 sv1#page14 sv1#page18 sv1#seu7">
   <OperationUnits>
-    <CreateUnit gr:x="565" gr:y="155" id="sv1#cru2" name="Create2" entity="ent1">
+    <CreateUnit gr:x="570" gr:y="85" id="sv1#cru2" name="Create2" entity="ent1">
       <OKLink id="sv1#cru2#oln1" name="OKFlow1" to="sv1#page1" automaticCoupling="true" gr:bendpoints="-3,124,291,74"/>
     </CreateUnit>
     <CreateUnit gr:x="1180" gr:y="425" id="sv1#cru1" name="Create1" entity="ent1">
@@ -202,6 +202,7 @@
       </OKLink>
       <Case value="1"/>
       <Case value="2"/>
+      <Case value="3"/>
     </SwitchUnit>
     <CreateUnit gr:x="2115" gr:y="1505" id="sv1#cru9" name="Create9" entity="ent2">
       <OKLink id="sv1#cru9#oln37" name="OKFlow37" to="sv1#lpu3" automaticCoupling="true" gr:bendpoints="212,-53,-88,113"/>
