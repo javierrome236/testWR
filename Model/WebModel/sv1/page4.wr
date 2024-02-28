@@ -1,0 +1,118 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="380" gr:y="1445" id="sv1#page4" name="Actualizar" landmark="true">
+  <ContentUnits>
+    <IndexUnit gr:x="20" gr:y="0" id="sv1#page4#inu4" name="Listado de productos" entity="ent1" linkOrder="sv1#page4#inu4#ln9" displayAttributes="ent1#att2">
+      <Link id="sv1#page4#inu4#ln9" name="Actualizar" to="sv1#seu3" automaticCoupling="true" type="normal" validate="true"/>
+    </IndexUnit>
+    <EntryUnit gr:x="215" gr:y="10" id="sv1#page4#enu4" name="Productos" entity="ent1" linkOrder="sv1#page4#enu4#ln11">
+      <Field id="sv1#page4#enu4#fld11" name="NombreProducto" type="string" modifiable="true" attribute="ent1#att2" preloaded="true"/>
+      <Field id="sv1#page4#enu4#fld12" name="Precio" type="float" modifiable="true" attribute="ent1#att3" preloaded="true"/>
+      <Field id="sv1#page4#enu4#fld13" name="DescripcionProducto" type="string" modifiable="true" attribute="ent1#att7" preloaded="true"/>
+      <Field id="sv1#page4#enu4#fld14" name="OID_Producto" type="string" modifiable="false" preloaded="true"/>
+      <Link id="sv1#page4#enu4#ln11" name="Aceptar" to="sv1#inn2" type="normal" validate="true">
+        <LinkParameter id="sv1#page4#enu4#ln11#par15" name="OID_Producto_Input" source="sv1#page4#enu4#fld14" target="sv1#inn2.isnotnull"/>
+        <LinkParameter id="sv1#page4#enu4#ln11#par16" name="DescripcionProducto_PASSING" source="sv1#page4#enu4#fld13" passing="true"/>
+        <LinkParameter id="sv1#page4#enu4#ln11#par18" name="Key [oid]_PASSING" source="key.ent1#att1" passing="true"/>
+        <LinkParameter id="sv1#page4#enu4#ln11#par23" name="NombreProducto_PASSING" source="sv1#page4#enu4#fld11" passing="true"/>
+        <LinkParameter id="sv1#page4#enu4#ln11#par24" name="Precio_PASSING" source="sv1#page4#enu4#fld12" passing="true"/>
+      </Link>
+    </EntryUnit>
+    <IndexUnit gr:x="0" gr:y="165" id="sv1#page4#inu5" name="Listado de proveedores" entity="ent2" linkOrder="sv1#page4#inu5#ln13" displayAttributes="ent2#att5">
+      <Link id="sv1#page4#inu5#ln13" name="Actualizar" to="sv1#seu4" automaticCoupling="true" type="normal" validate="true"/>
+    </IndexUnit>
+    <EntryUnit gr:x="210" gr:y="160" id="sv1#page4#enu5" name="Proveedor" entity="ent2" linkOrder="sv1#page4#enu5#ln14">
+      <Field id="sv1#page4#enu5#fld15" name="NombreProveedor" type="string" modifiable="true" attribute="ent2#att5" preloaded="true"/>
+      <Field id="sv1#page4#enu5#fld16" name="MailProveedor" type="string" modifiable="true" attribute="ent2#att6" preloaded="true"/>
+      <Field id="sv1#page4#enu5#fld17" name="OID_Proveedor" type="string" modifiable="false" preloaded="true"/>
+      <Link id="sv1#page4#enu5#ln14" name="Aceptar" to="sv1#inn3" type="normal" validate="true">
+        <LinkParameter id="sv1#page4#enu5#ln14#par36" name="OID_Proveedor_Input" source="sv1#page4#enu5#fld17" target="sv1#inn3.isnotnull"/>
+        <LinkParameter id="sv1#page4#enu5#ln14#par41" name="Key [oid]_PASSING" source="key.ent2#att4" passing="true"/>
+        <LinkParameter id="sv1#page4#enu5#ln14#par42" name="MailProveedor_PASSING" source="sv1#page4#enu5#fld16" passing="true"/>
+        <LinkParameter id="sv1#page4#enu5#ln14#par43" name="NombreProveedor_PASSING" source="sv1#page4#enu5#fld15" passing="true"/>
+        <LinkParameter id="sv1#page4#enu5#ln14#par44" name="OID_Proveedor_PASSING" source="sv1#page4#enu5#fld17" passing="true"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page4#inu4">
+          <layout:Link link="sv1#page4#inu4#ln9"/>
+          <layout:Attribute attribute="ent1#att2"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page4#enu4">
+          <layout:Field field="sv1#page4#enu4#fld11"/>
+          <layout:Field field="sv1#page4#enu4#fld12"/>
+          <layout:Field field="sv1#page4#enu4#fld13"/>
+          <layout:Field field="sv1#page4#enu4#fld14"/>
+          <layout:Link link="sv1#page4#enu4#ln11"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page4#inu5">
+          <layout:Link link="sv1#page4#inu5#ln13"/>
+          <layout:Attribute attribute="ent2#att5"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page4#enu5">
+          <layout:Field field="sv1#page4#enu5#fld15"/>
+          <layout:Field field="sv1#page4#enu5#fld16"/>
+          <layout:Field field="sv1#page4#enu5#fld17"/>
+          <layout:Link link="sv1#page4#enu5#ln14"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

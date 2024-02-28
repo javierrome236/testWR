@@ -1,0 +1,9 @@
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2" name="publico" homePage="sv2#page12">
+  <OperationUnits>
+    <LoginUnit gr:x="295" gr:y="235" id="sv2#lgu1" name="Login1">
+      <KOLink id="sv2#lgu1#kln5" name="KOFlow5" to="sv2#page12#mssu5">
+        <LinkParameter id="sv2#lgu1#kln5#par87" name="Error en username/password_Shown Messages" sourceValue="Error en username/password" target="sv2#page12#mssu5.shownMessages"/>
+      </KOLink>
+    </LoginUnit>
+  </OperationUnits>
+</SiteView>

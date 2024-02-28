@@ -1,0 +1,65 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1045" gr:y="815" id="sv1#page6" name="Actualizar" landmark="true">
+  <ContentUnits>
+    <IndexUnit gr:x="0" gr:y="0" id="sv1#page6#inu6" name="Productos" entity="ent1" linkOrder="sv1#page6#inu6#ln15 sv1#page6#inu6#ln18" displayAttributes="ent1#att2">
+      <Link id="sv1#page6#inu6#ln15" name="Actualizar" to="sv1#seu5" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv1#page6#inu6#ln18" name="Eliminar" to="sv1#dlu3" automaticCoupling="true" type="normal" validate="true"/>
+    </IndexUnit>
+    <EntryUnit gr:x="145" gr:y="20" id="sv1#page6#enu6" name="Nuevo/actualizar" entity="ent1" linkOrder="sv1#page6#enu6#ln17">
+      <Field id="sv1#page6#enu6#fld18" name="NombreProducto" type="string" modifiable="true" attribute="ent1#att2" preloaded="true"/>
+      <Field id="sv1#page6#enu6#fld19" name="Precio" type="float" modifiable="true" attribute="ent1#att3" preloaded="true"/>
+      <Field id="sv1#page6#enu6#fld20" name="DescripcionProducto" type="string" modifiable="true" attribute="ent1#att7" preloaded="true"/>
+      <Field id="sv1#page6#enu6#fld21" name="OID_producto" type="string" modifiable="false" preloaded="true"/>
+      <Link id="sv1#page6#enu6#ln17" name="Aceptar" to="sv1#inn4" type="normal" validate="true">
+        <LinkParameter id="sv1#page6#enu6#ln17#par60" name="OID_producto_Input" source="sv1#page6#enu6#fld21" target="sv1#inn4.isnotnull"/>
+        <LinkParameter id="sv1#page6#enu6#ln17#par61" name="DescripcionProducto_PASSING" source="sv1#page6#enu6#fld20" passing="true"/>
+        <LinkParameter id="sv1#page6#enu6#ln17#par62" name="Key [oid]_PASSING" source="key.ent1#att1" passing="true"/>
+        <LinkParameter id="sv1#page6#enu6#ln17#par63" name="NombreProducto_PASSING" source="sv1#page6#enu6#fld18" passing="true"/>
+        <LinkParameter id="sv1#page6#enu6#ln17#par64" name="Precio_PASSING" source="sv1#page6#enu6#fld19" passing="true"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page6#inu6">
+          <layout:Attribute attribute="ent1#att2"/>
+          <layout:Link link="sv1#page6#inu6#ln15"/>
+          <layout:Link link="sv1#page6#inu6#ln18"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page6#enu6">
+          <layout:Field field="sv1#page6#enu6#fld18"/>
+          <layout:Field field="sv1#page6#enu6#fld19"/>
+          <layout:Field field="sv1#page6#enu6#fld20"/>
+          <layout:Field field="sv1#page6#enu6#fld21"/>
+          <layout:Link link="sv1#page6#enu6#ln17"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

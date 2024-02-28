@@ -1,0 +1,82 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="115" gr:y="75" id="sv3#page13" name="Inicio zona privada">
+  <ContentUnits>
+    <IndexUnit gr:x="0" gr:y="0" id="sv3#page13#inu8" name="Usuarios registrados" entity="User" displayAttributes="userName password email User2DefaultGroup.groupName" customDescriptor="false"/>
+    <EntryUnit gr:x="10" gr:y="100" id="sv3#page13#enu10" name="Nuevo usuario" entity="User" linkOrder="sv3#page13#enu10#ln23">
+      <Field id="sv3#page13#enu10#fld28" name="userName" type="string" modifiable="true" attribute="userName"/>
+      <Field id="sv3#page13#enu10#fld29" name="password" type="password" modifiable="true" attribute="password"/>
+      <Field id="sv3#page13#enu10#fld30" name="email" type="string" modifiable="true" attribute="email"/>
+      <SelectionField id="sv3#page13#enu10#sfld1" name="defaultGroup" type="string" role="User2DefaultGroup"/>
+      <Link id="sv3#page13#enu10#ln23" name="Flow23" to="sv3#cru7" type="normal" validate="true">
+        <LinkParameter id="sv3#page13#enu10#ln23#par90" name="email_email" source="sv3#page13#enu10#fld30" target="sv3#cru7.email"/>
+        <LinkParameter id="sv3#page13#enu10#ln23#par91" name="defaultGroup_Group.oid(defaultGroup)" source="sv3#page13#enu10#sfld1" target="sv3#cru7.User2DefaultGroup.groupOID"/>
+        <LinkParameter id="sv3#page13#enu10#ln23#par92" name="password_password" source="sv3#page13#enu10#fld29" target="sv3#cru7.password"/>
+        <LinkParameter id="sv3#page13#enu10#ln23#par93" name="userName_userName" source="sv3#page13#enu10#fld28" target="sv3#cru7.userName"/>
+      </Link>
+    </EntryUnit>
+    <SelectorUnit gr:x="15" gr:y="220" id="sv3#page13#seu6" name="Selector6" entity="Group">
+      <Link id="sv3#page13#seu6#ln22" name="Flow22" to="sv3#page13#enu10" type="transport" validate="true">
+        <LinkParameter id="sv3#page13#seu6#ln22#par88" name="groupName_defaultGroup [label]" source="groupNameArray" target="sv3#page13#enu10#sfld1_label"/>
+        <LinkParameter id="sv3#page13#seu6#ln22#par89" name="oid_defaultGroup [output]" source="groupOIDArray" target="sv3#page13#enu10#sfld1_output"/>
+      </Link>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#page13#inu8">
+          <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="password"/>
+          <layout:Attribute attribute="email"/>
+          <layout:Attribute attribute="User2DefaultGroup.groupName"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#page13#enu10">
+          <layout:Field field="sv3#page13#enu10#fld28"/>
+          <layout:Field field="sv3#page13#enu10#fld29"/>
+          <layout:Field field="sv3#page13#enu10#fld30"/>
+          <layout:Field field="sv3#page13#enu10#sfld1"/>
+          <layout:Link link="sv3#page13#enu10#ln23"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

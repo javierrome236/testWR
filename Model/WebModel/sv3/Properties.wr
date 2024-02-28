@@ -1,0 +1,11 @@
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv3" name="privado" protected="true" homePage="sv3#page21" landmarks="sv3#lou1">
+  <OperationUnits>
+    <LogoutUnit gr:x="610" gr:y="105" id="sv3#lou1" name="Logout1" siteView="sv4" invalidateSession="false" landmark="true"/>
+    <CreateUnit gr:x="360" gr:y="290" id="sv3#cru7" name="Create7" entity="User">
+      <OKLink id="sv3#cru7#oln18" name="OKFlow18" to="sv3#page13" automaticCoupling="true" gr:bendpoints="-32,-98,163,-18"/>
+    </CreateUnit>
+    <CreateUnit gr:x="1220" gr:y="235" id="sv3#cru10" name="Create10" entity="User">
+      <OKLink id="sv3#cru10#oln43" name="OKFlow43" to="sv3#page21" automaticCoupling="true" gr:bendpoints="-91,50,189,76"/>
+    </CreateUnit>
+  </OperationUnits>
+</SiteView>

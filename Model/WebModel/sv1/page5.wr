@@ -1,0 +1,31 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1780" gr:y="190" id="sv1#page5" name="Ejercicio control de flujos" landmark="false">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv1#page5#enu7" name="Opci&#243;n" linkOrder="sv1#page5#enu7#ln16">
+      <Field id="sv1#page5#enu7#fld22" name="Opci&#243;n" type="integer" modifiable="true"/>
+      <Link id="sv1#page5#enu7#ln16" name="Aceptar" to="sv1#switch1" type="normal" validate="true">
+        <LinkParameter id="sv1#page5#enu7#ln16#par56" name="Opci&#243;n_Switch" source="sv1#page5#enu7#fld22" target="sv1#switch1.switch"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page5#enu7">
+          <layout:Field field="sv1#page5#enu7#fld22"/>
+          <layout:Link link="sv1#page5#enu7#ln16"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

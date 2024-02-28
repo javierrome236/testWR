@@ -1,0 +1,51 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="230" gr:y="70" id="sv2#page12" name="Inicio">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv2#page12#enu9" name="Login usuario" entity="User" linkOrder="sv2#page12#enu9#ln19">
+      <Field id="sv2#page12#enu9#fld26" name="userName" type="string" modifiable="true" attribute="userName"/>
+      <Field id="sv2#page12#enu9#fld27" name="password" type="password" modifiable="true" attribute="password"/>
+      <Link id="sv2#page12#enu9#ln19" name="Acceder" to="sv2#lgu1" type="normal" validate="true">
+        <LinkParameter id="sv2#page12#enu9#ln19#par85" name="userName_Username" source="sv2#page12#enu9#fld26" target="sv2#lgu1.username"/>
+        <LinkParameter id="sv2#page12#enu9#ln19#par86" name="password_Password" source="sv2#page12#enu9#fld27" target="sv2#lgu1.password"/>
+      </Link>
+    </EntryUnit>
+    <MultiMessageUnit gr:x="150" gr:y="10" id="sv2#page12#mssu5" name="Informa"/>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#page12#enu9">
+          <layout:Field field="sv2#page12#enu9#fld26"/>
+          <layout:Field field="sv2#page12#enu9#fld27"/>
+          <layout:Link link="sv2#page12#enu9#ln19"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#page12#mssu5"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

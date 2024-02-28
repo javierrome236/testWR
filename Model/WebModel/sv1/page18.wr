@@ -1,0 +1,58 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1895" gr:y="1280" id="sv1#page18" name="Ejercicio bucle" landmark="true">
+  <ContentUnits>
+    <IndexUnit gr:x="0" gr:y="5" id="sv1#page18#inu9" name="Lista de proveedores" entity="ent2" displayAttributes="ent2#att5"/>
+    <EntryUnit gr:x="185" gr:y="0" id="sv1#page18#enu12" name="Nuevos proveedores" entity="ent2" linkOrder="sv1#page18#enu12#ln25">
+      <Field id="sv1#page18#enu12#fld32" name="NombreProveedor" type="string" modifiable="true" attribute="ent2#att5"/>
+      <Field id="sv1#page18#enu12#fld33" name="MailProveedor" type="string" modifiable="true" attribute="ent2#att6"/>
+      <Field id="sv1#page18#enu12#fld34" name="Contador" type="integer" modifiable="true"/>
+      <Link id="sv1#page18#enu12#ln25" name="Flow25" to="sv1#lpu3" type="normal" validate="true">
+        <LinkParameter id="sv1#page18#enu12#ln25#par98" name="Contador_Iteration Count" source="sv1#page18#enu12#fld34" target="sv1#lpu3.iterationCount"/>
+      </Link>
+      <Link id="sv1#page18#enu12#ln26" name="Flow26" to="sv1#cru9" type="transport" validate="true">
+        <LinkParameter id="sv1#page18#enu12#ln26#par99" name="MailProveedor_MailProveedor" source="sv1#page18#enu12#fld33" target="sv1#cru9.ent2#att6"/>
+        <LinkParameter id="sv1#page18#enu12#ln26#par100" name="NombreProveedor_NombreProveedor" source="sv1#page18#enu12#fld32" target="sv1#cru9.ent2#att5"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page18#inu9">
+          <layout:Attribute attribute="ent2#att5"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page18#enu12">
+          <layout:Field field="sv1#page18#enu12#fld32"/>
+          <layout:Field field="sv1#page18#enu12#fld33"/>
+          <layout:Field field="sv1#page18#enu12#fld34"/>
+          <layout:Link link="sv1#page18#enu12#ln25"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
